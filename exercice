@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Navbar & Section</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        /* Reset default margin & padding for body and ul elements */
+        body,
+        ul {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+       
+        /* Navbar Styling */
+        .navbar {
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space out items evenly */
+            align-items: center; /* Center items vertically */
+            background-color: #333; /* Dark background color */
+            padding: 15px 20px; /* Padding around the navbar */
+        }
+
+        .logo {
+            color: white;   
+            font-size: px; /* Larger font size */
+            font-weight: bold; /* Bold font weight */
+        }
+
+        .nav-links {
+            list-style: none; /* Remove default list styling */
+            display: flex; /* Use flexbox for layout */
+        }
+
+        .nav-links li {
+            margin: 0 15px; /* Space between list items */
+        }
+
+        .nav-links a {
+            text-decoration: none; /* Remove underline from links */
+            color: white; /* White text color */
+            padding: 10px; /* Padding around the links */
+        }
+
+        .nav-links a:hover {
+            background-color: #555; /* Darker background on hover */
+            border-radius: 5px; /* Rounded corners on hover */
+        }
+
+        /* Section Styling */
+        .content {
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+            padding: 50px; /* Padding around the section */
+        }
+
+        .text {
+            max-width: 50%; /* Maximum width of text container */
+            padding: 20px; /* Padding around the text */
+        }
+
+        .image img {
+            width: 100%; /* Make image responsive */
+            max-width: 400px; /* Maximum width of image */
+            border-radius: 10px; /* Rounded corners for the image */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div  class="logo">MyWebsite</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section with Image -->
+    <section class="content">
+        <div id="text" class="text">
+            <h1>Welcome to My Website</h1>
+            <p>This is a simple section with an image and some text. The image is responsive.</p>
+        </div>
+        <div class="image">
+            <img src="Screenshot 2025-02-06 113501.png" alt="Sample Image">
+        </div>
+    </section>
+
+</body>
+
+</html>
